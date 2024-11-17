@@ -1,0 +1,145 @@
+:root {
+    /* Fonts */
+    --primary-font: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+
+    /* Colors */
+    --iris: rgb(77, 90, 229); /* #4d5ae5 */
+    --ocean: rgb(64, 75, 191); /* #404bbf */
+    --navy-blue: rgb(46, 47, 66); /* #2e2f42 */
+    --green: rgb(49, 208, 170); /* #31d0aa */
+    --slate: rgb(67, 68, 85); /* #434455 */
+    --light-slate: rgb(142, 143, 153); /* #8e8f99 */
+    --cornflower: rgb(231, 233, 252); /* #e7e9fc */
+    --cloud: rgb(244, 244, 253); /* #f4f4fd */
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgb(46, 47, 66);
+    --white: rgb(255, 255, 255); /* #fff */
+    --dairy: rgb(252, 252, 252); /* #fcfcfc */
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--white);
+    color: var(--slate);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Reset */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Common */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--navy-blue);
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.approach-title, .team-name, .portfolio-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+/* HEADER */
+.logo {
+    font-family: var(--second-family);
+    color: var(--iris);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.dark-logo {
+    color: var(--navy-blue);
+}
+
+.nav-link {
+    color: var(--navy-blue);
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--ocean);
+}
+
+.nav-link:active {
+    color: var(--ocean);
+}
+
+.contact-link:hover, .contact-link:focus {
+    color: var(--ocean);
+}
+
+.contact-link:active {
+    color: var(--ocean);
+}
+
+/* HERO */
+.hero {
+    background-color: var(--navy-blue);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+
+.hero-btn {
+    background-color: var(--iris);
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+
+.hero-btn:hover, .hero-btn:focus {
+    background-color: var(--ocean);
+}
+
+/* OUR TEAM */
+.team {
+    background-color: var(--cloud);
+}
+
+.team-member {
+    background-color: var(--white);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--navy-blue);
+}
+
+.light-logo, .footer-text {
+    color: var(--cloud);
+}
