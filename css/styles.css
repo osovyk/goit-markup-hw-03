@@ -48,10 +48,15 @@ address {
     font-style: normal;
 }
 
+img {
+    display: block;
+}
+
 /* Common */
 .container {
     width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section-title {
@@ -93,7 +98,6 @@ address {
 .header {
     border-bottom: 1px solid var(--cornflower);
     height: 72px;
-    padding: 24px 0;
 }
 
 .header .container {
@@ -113,16 +117,18 @@ address {
 
 .dark-logo {
     color: var(--navy-blue);
+    margin-right: 76px;
 }
 
 .nav {
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
 
 .nav-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .nav-link {
@@ -141,6 +147,7 @@ address {
 .contact-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .contact-link {
@@ -150,11 +157,7 @@ address {
 /* HERO */
 .hero {
     background-color: var(--navy-blue);
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -164,17 +167,23 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white);
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 .hero-btn {
+    text-align: center;
     background-color: var(--iris);
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.04em;
     color: var(--white);
     border-radius: 4px;
-    padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -185,6 +194,14 @@ address {
 .approach-list {
     display: flex;
     gap: 24px;
+}
+
+.approach-item {
+    flex-basis: calc((100% - 3 * 24px) / 4)
+}
+
+.approach-item:hover {
+    margin-bottom: 8px;
 }
 
 /* OUR TEAM */
