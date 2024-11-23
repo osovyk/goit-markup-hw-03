@@ -112,8 +112,9 @@ body {
     row-gap: var(--row-gap);
 }
 
-.item {
+.flex-item {
     flex-basis: calc((100% - (var(--items) - 1) * var(--col-gap)) / var(--items));
+    overflow: hidden;
 }
 
 .visually-hidden {
@@ -227,10 +228,6 @@ body {
     background-color: var(--ocean);
 }
 
-/* Approach */
-
-
-
 /* OUR TEAM */
 .team {
     background-color: var(--cloud);
@@ -249,7 +246,7 @@ body {
 
 /* Portfolio */
 .portfolio-list {
-    --items: 4;
+    --items: 3;
     row-gap: calc(var(--col-gap) * 2);
 }
 
